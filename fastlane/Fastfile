@@ -1,3 +1,5 @@
+opt_out_usage
+
 default_platform(:ios)
 
 platform :ios do
@@ -11,9 +13,12 @@ platform :ios do
       in_house: false
     )
 
+    keychain_name = "temporary_keychain"
+    keychain_password = "temporary_password_123"
+
     create_keychain(
-      name: "temporary_keychain",
-      password: "temporary_password_123",
+      name: keychain_name,
+      password: keychain_password,
       default_keychain: true,
       unlock: true,
       timeout: 3600,
@@ -22,8 +27,8 @@ platform :ios do
 
     get_certificates(
       api_key: api_key,
-      keychain_name: "temporary_keychain",
-      keychain_password: "temporary_password_123"
+      keychain_path: lane_context[SharedValues::KEYCHAIN_PATH],
+      keychain_password: keychain_password
     )
 
     get_provisioning_profile(
@@ -57,9 +62,12 @@ platform :ios do
       in_house: false
     )
 
+    keychain_name = "temporary_keychain"
+    keychain_password = "temporary_password_123"
+
     create_keychain(
-      name: "temporary_keychain",
-      password: "temporary_password_123",
+      name: keychain_name,
+      password: keychain_password,
       default_keychain: true,
       unlock: true,
       timeout: 3600,
@@ -68,8 +76,8 @@ platform :ios do
 
     get_certificates(
       api_key: api_key,
-      keychain_name: "temporary_keychain",
-      keychain_password: "temporary_password_123"
+      keychain_path: lane_context[SharedValues::KEYCHAIN_PATH],
+      keychain_password: keychain_password
     )
 
     get_provisioning_profile(
