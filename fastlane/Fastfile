@@ -40,6 +40,17 @@ platform :ios do
       app_identifier: "com.fcc.member"
     )
 
+    disable_automatic_code_signing(path: "FCCMember.xcodeproj")
+
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      path: "FCCMember.xcodeproj",
+      team_id: ENV["APPLE_DEVELOPER_TEAM_ID"] || "XHTZJ4SN4C",
+      bundle_identifier: "com.fcc.member",
+      profile_name: lane_context[SharedValues::SIGH_NAME],
+      code_sign_identity: "Apple Distribution"
+    )
+
     build_app(
       project: "FCCMember.xcodeproj",
       scheme: "FCCMember",
@@ -47,7 +58,14 @@ platform :ios do
       export_method: "app-store",
       clean: true,
       output_directory: "./build",
-      output_name: "FCCMember.ipa"
+      output_name: "FCCMember.ipa",
+      export_options: {
+        signingStyle: "manual",
+        provisioningProfiles: {
+          "com.fcc.member" => lane_context[SharedValues::SIGH_NAME]
+        }
+      },
+      xcargs: "CODE_SIGN_STYLE=Manual PROVISIONING_PROFILE_SPECIFIER='#{lane_context[SharedValues::SIGH_NAME]}' CODE_SIGN_IDENTITY='Apple Distribution'"
     )
 
     upload_to_testflight(
@@ -93,6 +111,17 @@ platform :ios do
       app_identifier: "com.fcc.member"
     )
 
+    disable_automatic_code_signing(path: "FCCMember.xcodeproj")
+
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      path: "FCCMember.xcodeproj",
+      team_id: ENV["APPLE_DEVELOPER_TEAM_ID"] || "XHTZJ4SN4C",
+      bundle_identifier: "com.fcc.member",
+      profile_name: lane_context[SharedValues::SIGH_NAME],
+      code_sign_identity: "Apple Distribution"
+    )
+
     build_app(
       project: "FCCMember.xcodeproj",
       scheme: "FCCMember",
@@ -100,7 +129,14 @@ platform :ios do
       export_method: "app-store",
       clean: true,
       output_directory: "./build",
-      output_name: "FCCMember.ipa"
+      output_name: "FCCMember.ipa",
+      export_options: {
+        signingStyle: "manual",
+        provisioningProfiles: {
+          "com.fcc.member" => lane_context[SharedValues::SIGH_NAME]
+        }
+      },
+      xcargs: "CODE_SIGN_STYLE=Manual PROVISIONING_PROFILE_SPECIFIER='#{lane_context[SharedValues::SIGH_NAME]}' CODE_SIGN_IDENTITY='Apple Distribution'"
     )
 
     upload_to_app_store(
