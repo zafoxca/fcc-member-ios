@@ -49,3 +49,4 @@ jobs:
         with:
           name: FCCMember-IPA
           path: build/*.ipa
+          if-no-files-found: ignore
