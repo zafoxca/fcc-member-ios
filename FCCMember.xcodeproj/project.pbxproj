@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0100012CE0000100000001 /* FCCMemberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100022CE0000100000001 /* FCCMemberApp.swift */; };
+		AA0100032CE0000100000001 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100042CE0000100000001 /* Theme.swift */; };
+		AA0100052CE0000100000001 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100062CE0000100000001 /* Models.swift */; };
+		AA0100072CE0000100000001 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100082CE0000100000001 /* SessionManager.swift */; };
+		AA0100092CE0000100000001 /* MemberAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100102CE0000100000001 /* MemberAPIService.swift */; };
+		AA0100112CE0000100000001 /* QRCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100122CE0000100000001 /* QRCodeHelper.swift */; };
+		AA0100132CE0000100000001 /* LegalComplianceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100142CE0000100000001 /* LegalComplianceView.swift */; };
+		AA0100152CE0000100000001 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100162CE0000100000001 /* LoginView.swift */; };
+		AA0100172CE0000100000001 /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100182CE0000100000001 /* PhotoCaptureView.swift */; };
+		AA0100192CE0000100000001 /* WalletSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100202CE0000100000001 /* WalletSectionView.swift */; };
+		AA0100212CE0000100000001 /* KioskCodeDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100222CE0000100000001 /* KioskCodeDialogView.swift */; };
+		AA0100232CE0000100000001 /* NotificationsSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100242CE0000100000001 /* NotificationsSheetView.swift */; };
+		AA0100252CE0000100000001 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100262CE0000100000001 /* DashboardView.swift */; };
+		AA0100272CE0000100000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0100282CE0000100000001 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0100292CE0000100000001 /* FCCMember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCCMember.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0100022CE0000100000001 /* FCCMemberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCCMemberApp.swift; sourceTree = "<group>"; };
+		AA0100042CE0000100000001 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		AA0100062CE0000100000001 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		AA0100082CE0000100000001 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		AA0100102CE0000100000001 /* MemberAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberAPIService.swift; sourceTree = "<group>"; };
+		AA0100122CE0000100000001 /* QRCodeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeHelper.swift; sourceTree = "<group>"; };
+		AA0100142CE0000100000001 /* LegalComplianceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalComplianceView.swift; sourceTree = "<group>"; };
+		AA0100162CE0000100000001 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AA0100182CE0000100000001 /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
+		AA0100202CE0000100000001 /* WalletSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSectionView.swift; sourceTree = "<group>"; };
+		AA0100222CE0000100000001 /* KioskCodeDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskCodeDialogView.swift; sourceTree = "<group>"; };
+		AA0100242CE0000100000001 /* NotificationsSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsSheetView.swift; sourceTree = "<group>"; };
+		AA0100262CE0000100000001 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		AA0100282CE0000100000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA0100302CE0000100000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0100312CE0000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0100322CE0000100000001 = {
+			isa = PBXGroup;
+			children = (
+				AA0100332CE0000100000001 /* FCCMember */,
+				AA0100342CE0000100000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0100332CE0000100000001 /* FCCMember */ = {
+			isa = PBXGroup;
+			children = (
+				AA0100352CE0000100000001 /* Sources */,
+				AA0100282CE0000100000001 /* Assets.xcassets */,
+				AA0100302CE0000100000001 /* Info.plist */,
+			);
+			path = FCCMember;
+			sourceTree = "<group>";
+		};
+		AA0100352CE0000100000001 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA0100022CE0000100000001 /* FCCMemberApp.swift */,
+				AA0100362CE0000100000001 /* Theme */,
+				AA0100372CE0000100000001 /* Models */,
+				AA0100382CE0000100000001 /* Services */,
+				AA0100392CE0000100000001 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AA0100362CE0000100000001 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				AA0100042CE0000100000001 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AA0100372CE0000100000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA0100062CE0000100000001 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA0100382CE0000100000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA0100082CE0000100000001 /* SessionManager.swift */,
+				AA0100102CE0000100000001 /* MemberAPIService.swift */,
+				AA0100122CE0000100000001 /* QRCodeHelper.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA0100392CE0000100000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA0100142CE0000100000001 /* LegalComplianceView.swift */,
+				AA0100162CE0000100000001 /* LoginView.swift */,
+				AA0100182CE0000100000001 /* PhotoCaptureView.swift */,
+				AA0100202CE0000100000001 /* WalletSectionView.swift */,
+				AA0100222CE0000100000001 /* KioskCodeDialogView.swift */,
+				AA0100242CE0000100000001 /* NotificationsSheetView.swift */,
+				AA0100262CE0000100000001 /* DashboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA0100342CE0000100000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0100292CE0000100000001 /* FCCMember.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0100402CE0000100000001 /* FCCMember */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0100412CE0000100000001 /* Build configuration list for PBXNativeTarget "FCCMember" */;
+			buildPhases = (
+				AA0100422CE0000100000001 /* Sources */,
+				AA0100312CE0000100000001 /* Frameworks */,
+				AA0100432CE0000100000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FCCMember;
+			productName = FCCMember;
+			productReference = AA0100292CE0000100000001 /* FCCMember.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0100442CE0000100000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA0100402CE0000100000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA0100452CE0000100000001 /* Build configuration list for PBXProject "FCCMember" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				fr,
+				Base,
+			);
+			mainGroup = AA0100322CE0000100000001;
+			productRefGroup = AA0100342CE0000100000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0100402CE0000100000001 /* FCCMember */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0100432CE0000100000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0100272CE0000100000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0100422CE0000100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0100012CE0000100000001 /* FCCMemberApp.swift in Sources */,
+				AA0100032CE0000100000001 /* Theme.swift in Sources */,
+				AA0100052CE0000100000001 /* Models.swift in Sources */,
+				AA0100072CE0000100000001 /* SessionManager.swift in Sources */,
+				AA0100092CE0000100000001 /* MemberAPIService.swift in Sources */,
+				AA0100112CE0000100000001 /* QRCodeHelper.swift in Sources */,
+				AA0100132CE0000100000001 /* LegalComplianceView.swift in Sources */,
+				AA0100152CE0000100000001 /* LoginView.swift in Sources */,
+				AA0100172CE0000100000001 /* PhotoCaptureView.swift in Sources */,
+				AA0100192CE0000100000001 /* WalletSectionView.swift in Sources */,
+				AA0100212CE0000100000001 /* KioskCodeDialogView.swift in Sources */,
+				AA0100232CE0000100000001 /* NotificationsSheetView.swift in Sources */,
+				AA0100252CE0000100000001 /* DashboardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA0100462CE0000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0100472CE0000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA0100482CE0000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FCCMember/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fès Country Club";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcc.member;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA0100492CE0000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FCCMember/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fès Country Club";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcc.member;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0100452CE0000100000001 /* Build configuration list for PBXProject "FCCMember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0100462CE0000100000001 /* Debug */,
+				AA0100472CE0000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0100412CE0000100000001 /* Build configuration list for PBXNativeTarget "FCCMember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0100482CE0000100000001 /* Debug */,
+				AA0100492CE0000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = AA0100442CE0000100000001 /* Project object */;
+}
