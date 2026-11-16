@@ -1,4 +1,2 @@
-app_identifier("com.fcc.member") # Bundle ID sur developer.apple.com
-apple_id(ENV["APPLE_ID"]) # Votre email Apple Developer (si nécessaire)
-itc_team_id(ENV["APP_STORE_CONNECT_TEAM_ID"]) # Team ID App Store Connect (optionnel)
-team_id(ENV["APPLE_DEVELOPER_TEAM_ID"]) # Team ID 10 caractères sur developer.apple.com
+app_identifier("com.fcc.member")
+team_id("XHTZJ4SN4C")

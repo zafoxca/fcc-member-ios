@@ -1,7 +1,7 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Push a new build to TestFlight"
+  desc "Push a new build to TestFlight & App Store Connect"
   lane :beta do
     api_key = app_store_connect_api_key(
       key_id: ENV["ASC_KEY_ID"],
@@ -9,6 +9,26 @@ platform :ios do
       key_content: ENV["ASC_KEY_CONTENT"],
       is_key_content_base64: true,
       in_house: false
+    )
+
+    create_keychain(
+      name: "temporary_keychain",
+      password: "temporary_password_123",
+      default_keychain: true,
+      unlock: true,
+      timeout: 3600,
+      lock_when_sleeps: false
+    )
+
+    get_certificates(
+      api_key: api_key,
+      keychain_name: "temporary_keychain",
+      keychain_password: "temporary_password_123"
+    )
+
+    get_provisioning_profile(
+      api_key: api_key,
+      app_identifier: "com.fcc.member"
     )
 
     build_app(
@@ -35,6 +55,26 @@ platform :ios do
       key_content: ENV["ASC_KEY_CONTENT"],
       is_key_content_base64: true,
       in_house: false
+    )
+
+    create_keychain(
+      name: "temporary_keychain",
+      password: "temporary_password_123",
+      default_keychain: true,
+      unlock: true,
+      timeout: 3600,
+      lock_when_sleeps: false
+    )
+
+    get_certificates(
+      api_key: api_key,
+      keychain_name: "temporary_keychain",
+      keychain_password: "temporary_password_123"
+    )
+
+    get_provisioning_profile(
+      api_key: api_key,
+      app_identifier: "com.fcc.member"
     )
 
     build_app(
